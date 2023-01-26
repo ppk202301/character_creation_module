@@ -3,41 +3,41 @@ from random import randint
 
 def attack(char_name, char_class):
     if char_class == 'warrior':
-        number = 5 + randint(3, 5)
-        return (f'{char_name} нанёс урон противнику равный {number}')
+        value = 5 + randint(3, 5)
+        return (f'{char_name} нанёс урон противнику равный {value}')
     if char_class == 'mage':
-        number = 5 + randint(5, 10)
-        return (f'{char_name} нанёс урон противнику равный {number}')
+        value = 5 + randint(5, 10)
+        return (f'{char_name} нанёс урон противнику равный {value}')
     if char_class == 'healer':
-        number = 5 + randint(-3, -1)
-        return (f'{char_name} нанёс урон противнику равный {number}')
+        value = 5 + randint(-3, -1)
+        return (f'{char_name} нанёс урон противнику равный {value}')
     return (f'{char_class} is undefined')
 
 
 def defence(char_name, char_class):
     if char_class == 'warrior':
-        number = 10 + randint(5, 10)
-        return (f'{char_name} блокировал {number} урона')
+        value = 10 + randint(5, 10)
+        return (f'{char_name} блокировал {value} урона')
     if char_class == 'mage':
-        number = 10 + randint(-2, 2)
-        return (f'{char_name} блокировал {number} урона')
+        value = 10 + randint(-2, 2)
+        return (f'{char_name} блокировал {value} урона')
     if char_class == 'healer':
-        number = 10 + randint(2, 5)
-        return (f'{char_name} блокировал {number} урона')
+        value = 10 + randint(2, 5)
+        return (f'{char_name} блокировал {value} урона')
     return (f'{char_class} is undefined')
 
 
 def special(char_name, char_class):
     if char_class == 'warrior':
-        number = 80 + 25
+        value = 80 + 25
         return (f'{char_name} применил специальное умение '
-                '«Выносливость {number}»')
+                '«Выносливость {value}»')
     if char_class == 'mage':
-        number = 5 + 40
-        return (f'{char_name} применил специальное умение «Атака {number}»')
+        value = 5 + 40
+        return (f'{char_name} применил специальное умение «Атака {value}»')
     if char_class == 'healer':
-        number = 10 + 30
-        return (f'{char_name} применил специальное умение «Защита {number}»')
+        value = 10 + 30
+        return (f'{char_name} применил специальное умение «Защита {value}»')
     return (f'{char_class} is undefined')
 
 
